@@ -1,0 +1,1399 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Awesome-pyecharts</title>
+                <script type="text/javascript" src="https://assets.pyecharts.org/assets/v5/echarts.min.js"></script>
+
+    
+</head>
+<body >
+            <style>
+        .tab {
+            overflow: hidden;
+            border: 1px solid #ccc;
+            background-color: #f1f1f1;
+        }
+
+        .tab button {
+            background-color: inherit;
+            float: left;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            padding: 12px 16px;
+            transition: 0.3s;
+        }
+
+        .tab button:hover {
+            background-color: #ddd;
+        }
+
+        .tab button.active {
+            background-color: #ccc;
+        }
+
+        .chart-container {
+            display: block;
+        }
+
+        .chart-container:nth-child(n+2) {
+            display: none;
+        }
+    </style>
+    <div class="tab">
+            <button class="tablinks" onclick="showChart(event, '026c565d46d14b5391f7b8477b3dd442')">极萌</button>
+            <button class="tablinks" onclick="showChart(event, 'f89d885bc1bd4f9383e1c465340c2d08')">直播间细分-堆叠图</button>
+    </div>
+
+    <div class="box">
+                <div id="026c565d46d14b5391f7b8477b3dd442" class="chart-container" style="width:900px; height:500px; "></div>
+    <script>
+            document.getElementById('026c565d46d14b5391f7b8477b3dd442').style.width = document.getElementById('026c565d46d14b5391f7b8477b3dd442').parentNode.clientWidth + 'px';
+        var chart_026c565d46d14b5391f7b8477b3dd442 = echarts.init(
+            document.getElementById('026c565d46d14b5391f7b8477b3dd442'), 'white', {renderer: 'canvas'});
+        var option_026c565d46d14b5391f7b8477b3dd442 = {
+    "animation": true,
+    "animationThreshold": 2000,
+    "animationDuration": 1000,
+    "animationEasing": "cubicOut",
+    "animationDelay": 0,
+    "animationDurationUpdate": 300,
+    "animationEasingUpdate": "cubicOut",
+    "animationDelayUpdate": 0,
+    "aria": {
+        "enabled": false
+    },
+    "color": [
+        "#5470c6",
+        "#91cc75",
+        "#fac858",
+        "#ee6666",
+        "#73c0de",
+        "#3ba272",
+        "#fc8452",
+        "#9a60b4",
+        "#ea7ccc"
+    ],
+    "series": [
+        {
+            "type": "line",
+            "name": "\u6781\u840cGMV",
+            "connectNulls": false,
+            "xAxisIndex": 0,
+            "yAxisIndex": 0,
+            "symbolSize": 4,
+            "showSymbol": true,
+            "smooth": false,
+            "clip": true,
+            "step": false,
+            "data": [
+                [
+                    "2023\u5e7405\u670823\u65e5",
+                    258.06
+                ],
+                [
+                    "2023\u5e7405\u670824\u65e5",
+                    262.11
+                ],
+                [
+                    "2023\u5e7405\u670825\u65e5",
+                    507.01
+                ],
+                [
+                    "2023\u5e7405\u670826\u65e5",
+                    183.28
+                ],
+                [
+                    "2023\u5e7405\u670827\u65e5",
+                    304.65
+                ],
+                [
+                    "2023\u5e7405\u670828\u65e5",
+                    324.41
+                ],
+                [
+                    "2023\u5e7405\u670829\u65e5",
+                    2483.65
+                ],
+                [
+                    "2023\u5e7405\u670830\u65e5",
+                    98.27
+                ],
+                [
+                    "2023\u5e7405\u670831\u65e5",
+                    128.42
+                ],
+                [
+                    "2023\u5e7406\u670801\u65e5",
+                    228.55
+                ],
+                [
+                    "2023\u5e7406\u670802\u65e5",
+                    227.9
+                ],
+                [
+                    "2023\u5e7406\u670803\u65e5",
+                    353.72
+                ],
+                [
+                    "2023\u5e7406\u670804\u65e5",
+                    251.39
+                ],
+                [
+                    "2023\u5e7406\u670805\u65e5",
+                    320.54
+                ],
+                [
+                    "2023\u5e7406\u670806\u65e5",
+                    343.8
+                ],
+                [
+                    "2023\u5e7406\u670807\u65e5",
+                    350.96
+                ],
+                [
+                    "2023\u5e7406\u670808\u65e5",
+                    241.58
+                ],
+                [
+                    "2023\u5e7406\u670809\u65e5",
+                    245.39
+                ],
+                [
+                    "2023\u5e7406\u670810\u65e5",
+                    370.25
+                ],
+                [
+                    "2023\u5e7406\u670811\u65e5",
+                    313.98
+                ]
+            ],
+            "hoverAnimation": true,
+            "label": {
+                "show": true,
+                "margin": 8
+            },
+            "logBase": 10,
+            "seriesLayoutBy": "column",
+            "lineStyle": {
+                "show": true,
+                "width": 2,
+                "opacity": 1,
+                "curveness": 0,
+                "type": "solid"
+            },
+            "areaStyle": {
+                "opacity": 0
+            },
+            "zlevel": 0,
+            "z": 0
+        },
+        {
+            "type": "line",
+            "name": "\u6781\u840cROI",
+            "connectNulls": false,
+            "xAxisIndex": 0,
+            "yAxisIndex": 1,
+            "symbolSize": 4,
+            "showSymbol": true,
+            "smooth": false,
+            "clip": true,
+            "step": false,
+            "data": [
+                [
+                    "2023\u5e7405\u670823\u65e5",
+                    2.37
+                ],
+                [
+                    "2023\u5e7405\u670824\u65e5",
+                    2.28
+                ],
+                [
+                    "2023\u5e7405\u670825\u65e5",
+                    3.11
+                ],
+                [
+                    "2023\u5e7405\u670826\u65e5",
+                    1.44
+                ],
+                [
+                    "2023\u5e7405\u670827\u65e5",
+                    1.78
+                ],
+                [
+                    "2023\u5e7405\u670828\u65e5",
+                    1.61
+                ],
+                [
+                    "2023\u5e7405\u670829\u65e5",
+                    13.43
+                ],
+                [
+                    "2023\u5e7405\u670830\u65e5",
+                    0.29
+                ],
+                [
+                    "2023\u5e7405\u670831\u65e5",
+                    0.29
+                ],
+                [
+                    "2023\u5e7406\u670801\u65e5",
+                    3.13
+                ],
+                [
+                    "2023\u5e7406\u670802\u65e5",
+                    4.47
+                ],
+                [
+                    "2023\u5e7406\u670803\u65e5",
+                    4.07
+                ],
+                [
+                    "2023\u5e7406\u670804\u65e5",
+                    2.79
+                ],
+                [
+                    "2023\u5e7406\u670805\u65e5",
+                    null
+                ],
+                [
+                    "2023\u5e7406\u670806\u65e5",
+                    null
+                ],
+                [
+                    "2023\u5e7406\u670807\u65e5",
+                    null
+                ],
+                [
+                    "2023\u5e7406\u670808\u65e5",
+                    null
+                ],
+                [
+                    "2023\u5e7406\u670809\u65e5",
+                    null
+                ],
+                [
+                    "2023\u5e7406\u670810\u65e5",
+                    null
+                ],
+                [
+                    "2023\u5e7406\u670811\u65e5",
+                    null
+                ]
+            ],
+            "hoverAnimation": true,
+            "label": {
+                "show": true,
+                "margin": 8
+            },
+            "logBase": 10,
+            "seriesLayoutBy": "column",
+            "lineStyle": {
+                "show": true,
+                "width": 2,
+                "opacity": 1,
+                "curveness": 0,
+                "type": "solid"
+            },
+            "areaStyle": {
+                "opacity": 0
+            },
+            "zlevel": 0,
+            "z": 0
+        },
+        {
+            "type": "line",
+            "name": "AMIRO GMV",
+            "connectNulls": false,
+            "xAxisIndex": 0,
+            "yAxisIndex": 0,
+            "symbolSize": 4,
+            "showSymbol": true,
+            "smooth": false,
+            "clip": true,
+            "step": false,
+            "data": [
+                [
+                    "2023\u5e7405\u670823\u65e5",
+                    null
+                ],
+                [
+                    "2023\u5e7405\u670824\u65e5",
+                    null
+                ],
+                [
+                    "2023\u5e7405\u670825\u65e5",
+                    119.2
+                ],
+                [
+                    "2023\u5e7405\u670826\u65e5",
+                    133.66
+                ],
+                [
+                    "2023\u5e7405\u670827\u65e5",
+                    280.62
+                ],
+                [
+                    "2023\u5e7405\u670828\u65e5",
+                    328.04
+                ],
+                [
+                    "2023\u5e7405\u670829\u65e5",
+                    218.83
+                ],
+                [
+                    "2023\u5e7405\u670830\u65e5",
+                    288.03
+                ],
+                [
+                    "2023\u5e7405\u670831\u65e5",
+                    466.87
+                ],
+                [
+                    "2023\u5e7406\u670801\u65e5",
+                    348.15
+                ],
+                [
+                    "2023\u5e7406\u670802\u65e5",
+                    300.86
+                ],
+                [
+                    "2023\u5e7406\u670803\u65e5",
+                    322.99
+                ],
+                [
+                    "2023\u5e7406\u670804\u65e5",
+                    78.27
+                ],
+                [
+                    "2023\u5e7406\u670805\u65e5",
+                    205.69
+                ],
+                [
+                    "2023\u5e7406\u670806\u65e5",
+                    182.75
+                ],
+                [
+                    "2023\u5e7406\u670807\u65e5",
+                    186.26
+                ],
+                [
+                    "2023\u5e7406\u670808\u65e5",
+                    163.34
+                ],
+                [
+                    "2023\u5e7406\u670809\u65e5",
+                    196.56
+                ],
+                [
+                    "2023\u5e7406\u670810\u65e5",
+                    180.01
+                ],
+                [
+                    "2023\u5e7406\u670811\u65e5",
+                    183.63
+                ]
+            ],
+            "hoverAnimation": true,
+            "label": {
+                "show": true,
+                "margin": 8
+            },
+            "logBase": 10,
+            "seriesLayoutBy": "column",
+            "lineStyle": {
+                "show": true,
+                "width": 2,
+                "opacity": 1,
+                "curveness": 0,
+                "type": "solid"
+            },
+            "areaStyle": {
+                "opacity": 0
+            },
+            "zlevel": 0,
+            "z": 0
+        },
+        {
+            "type": "line",
+            "name": "AMIRO ROI",
+            "connectNulls": false,
+            "xAxisIndex": 0,
+            "yAxisIndex": 1,
+            "symbolSize": 4,
+            "showSymbol": true,
+            "smooth": false,
+            "clip": true,
+            "step": false,
+            "data": [
+                [
+                    "2023\u5e7405\u670823\u65e5",
+                    5.03
+                ],
+                [
+                    "2023\u5e7405\u670824\u65e5",
+                    5.09
+                ],
+                [
+                    "2023\u5e7405\u670825\u65e5",
+                    5.67
+                ],
+                [
+                    "2023\u5e7405\u670826\u65e5",
+                    5.55
+                ],
+                [
+                    "2023\u5e7405\u670827\u65e5",
+                    3.66
+                ],
+                [
+                    "2023\u5e7405\u670828\u65e5",
+                    3.72
+                ],
+                [
+                    "2023\u5e7405\u670829\u65e5",
+                    3.68
+                ],
+                [
+                    "2023\u5e7405\u670830\u65e5",
+                    3.51
+                ],
+                [
+                    "2023\u5e7405\u670831\u65e5",
+                    4.95
+                ],
+                [
+                    "2023\u5e7406\u670801\u65e5",
+                    4.62
+                ],
+                [
+                    "2023\u5e7406\u670802\u65e5",
+                    7.41
+                ],
+                [
+                    "2023\u5e7406\u670803\u65e5",
+                    6.9
+                ],
+                [
+                    "2023\u5e7406\u670804\u65e5",
+                    3.28
+                ],
+                [
+                    "2023\u5e7406\u670805\u65e5",
+                    3.82
+                ],
+                [
+                    "2023\u5e7406\u670806\u65e5",
+                    4.45
+                ],
+                [
+                    "2023\u5e7406\u670807\u65e5",
+                    4.04
+                ],
+                [
+                    "2023\u5e7406\u670808\u65e5",
+                    3.78
+                ]
+            ],
+            "hoverAnimation": true,
+            "label": {
+                "show": true,
+                "margin": 8
+            },
+            "logBase": 10,
+            "seriesLayoutBy": "column",
+            "lineStyle": {
+                "show": true,
+                "width": 2,
+                "opacity": 1,
+                "curveness": 0,
+                "type": "solid"
+            },
+            "areaStyle": {
+                "opacity": 0
+            },
+            "zlevel": 0,
+            "z": 0
+        }
+    ],
+    "legend": [
+        {
+            "data": [
+                "\u6781\u840cGMV",
+                "\u6781\u840cROI",
+                "AMIRO GMV",
+                "AMIRO ROI"
+            ],
+            "selected": {},
+            "show": true,
+            "padding": 5,
+            "itemGap": 10,
+            "itemWidth": 25,
+            "itemHeight": 14,
+            "backgroundColor": "transparent",
+            "borderColor": "#ccc",
+            "borderWidth": 1,
+            "borderRadius": 0,
+            "pageButtonItemGap": 5,
+            "pageButtonPosition": "end",
+            "pageFormatter": "{current}/{total}",
+            "pageIconColor": "#2f4554",
+            "pageIconInactiveColor": "#aaa",
+            "pageIconSize": 15,
+            "animationDurationUpdate": 800,
+            "selector": false,
+            "selectorPosition": "auto",
+            "selectorItemGap": 7,
+            "selectorButtonGap": 10
+        }
+    ],
+    "tooltip": {
+        "show": true,
+        "trigger": "axis",
+        "triggerOn": "mousemove|click",
+        "axisPointer": {
+            "type": "cross"
+        },
+        "showContent": true,
+        "alwaysShowContent": false,
+        "showDelay": 0,
+        "hideDelay": 100,
+        "enterable": false,
+        "confine": false,
+        "appendToBody": false,
+        "transitionDuration": 0.4,
+        "textStyle": {
+            "fontSize": 14
+        },
+        "borderWidth": 0,
+        "padding": 5,
+        "order": "seriesAsc"
+    },
+    "xAxis": [
+        {
+            "show": true,
+            "scale": false,
+            "nameLocation": "end",
+            "nameGap": 15,
+            "gridIndex": 0,
+            "inverse": false,
+            "offset": 0,
+            "splitNumber": 5,
+            "minInterval": 0,
+            "splitLine": {
+                "show": true,
+                "lineStyle": {
+                    "show": true,
+                    "width": 1,
+                    "opacity": 1,
+                    "curveness": 0,
+                    "type": "solid"
+                }
+            },
+            "data": [
+                "2023\u5e7405\u670823\u65e5",
+                "2023\u5e7405\u670824\u65e5",
+                "2023\u5e7405\u670825\u65e5",
+                "2023\u5e7405\u670826\u65e5",
+                "2023\u5e7405\u670827\u65e5",
+                "2023\u5e7405\u670828\u65e5",
+                "2023\u5e7405\u670829\u65e5",
+                "2023\u5e7405\u670830\u65e5",
+                "2023\u5e7405\u670831\u65e5",
+                "2023\u5e7406\u670801\u65e5",
+                "2023\u5e7406\u670802\u65e5",
+                "2023\u5e7406\u670803\u65e5",
+                "2023\u5e7406\u670804\u65e5",
+                "2023\u5e7406\u670805\u65e5",
+                "2023\u5e7406\u670806\u65e5",
+                "2023\u5e7406\u670807\u65e5",
+                "2023\u5e7406\u670808\u65e5",
+                "2023\u5e7406\u670809\u65e5",
+                "2023\u5e7406\u670810\u65e5",
+                "2023\u5e7406\u670811\u65e5"
+            ]
+        }
+    ],
+    "yAxis": [
+        {
+            "show": true,
+            "scale": false,
+            "nameLocation": "end",
+            "nameGap": 15,
+            "gridIndex": 0,
+            "inverse": false,
+            "offset": 0,
+            "splitNumber": 5,
+            "minInterval": 0,
+            "splitLine": {
+                "show": true,
+                "lineStyle": {
+                    "show": true,
+                    "width": 1,
+                    "opacity": 1,
+                    "curveness": 0,
+                    "type": "solid"
+                }
+            }
+        },
+        {
+            "type": "value",
+            "show": true,
+            "scale": false,
+            "nameLocation": "end",
+            "nameGap": 15,
+            "gridIndex": 0,
+            "inverse": false,
+            "position": "right",
+            "offset": 0,
+            "splitNumber": 5,
+            "minInterval": 0,
+            "splitLine": {
+                "show": true,
+                "lineStyle": {
+                    "show": true,
+                    "width": 1,
+                    "opacity": 1,
+                    "curveness": 0,
+                    "type": "solid"
+                }
+            }
+        },
+        {
+            "type": "value",
+            "name": "mg/m\u00b3",
+            "show": true,
+            "scale": false,
+            "nameLocation": "end",
+            "nameGap": 15,
+            "gridIndex": 0,
+            "inverse": false,
+            "position": "left",
+            "offset": 40,
+            "splitNumber": 5,
+            "minInterval": 0,
+            "splitLine": {
+                "show": true,
+                "lineStyle": {
+                    "show": true,
+                    "width": 1,
+                    "opacity": 1,
+                    "curveness": 0,
+                    "type": "solid"
+                }
+            }
+        }
+    ],
+    "title": [
+        {
+            "show": true,
+            "text": "5.23-6.08\u6781\u840c\u76f4\u64ad\u95f4GMV\u4e0eROI",
+            "target": "blank",
+            "subtarget": "blank",
+            "padding": 5,
+            "itemGap": 10,
+            "textAlign": "auto",
+            "textVerticalAlign": "auto",
+            "triggerEvent": false
+        }
+    ],
+    "toolbox": {
+        "show": true,
+        "orient": "horizontal",
+        "itemSize": 15,
+        "itemGap": 10,
+        "left": "80%",
+        "feature": {
+            "saveAsImage": {
+                "type": "png",
+                "backgroundColor": "auto",
+                "connectedBackgroundColor": "#fff",
+                "show": true,
+                "title": "\u4fdd\u5b58\u4e3a\u56fe\u7247",
+                "pixelRatio": 1
+            },
+            "restore": {
+                "show": true,
+                "title": "\u8fd8\u539f"
+            },
+            "dataView": {
+                "show": true,
+                "title": "\u6570\u636e\u89c6\u56fe",
+                "readOnly": false,
+                "lang": [
+                    "\u6570\u636e\u89c6\u56fe",
+                    "\u5173\u95ed",
+                    "\u5237\u65b0"
+                ],
+                "backgroundColor": "#fff",
+                "textareaColor": "#fff",
+                "textareaBorderColor": "#333",
+                "textColor": "#000",
+                "buttonColor": "#c23531",
+                "buttonTextColor": "#fff"
+            },
+            "dataZoom": {
+                "show": true,
+                "title": {
+                    "zoom": "\u533a\u57df\u7f29\u653e",
+                    "back": "\u533a\u57df\u7f29\u653e\u8fd8\u539f"
+                },
+                "icon": {},
+                "filterMode": "filter"
+            },
+            "magicType": {
+                "show": true,
+                "type": [
+                    "line",
+                    "bar",
+                    "stack",
+                    "tiled"
+                ],
+                "title": {
+                    "line": "\u5207\u6362\u4e3a\u6298\u7ebf\u56fe",
+                    "bar": "\u5207\u6362\u4e3a\u67f1\u72b6\u56fe",
+                    "stack": "\u5207\u6362\u4e3a\u5806\u53e0",
+                    "tiled": "\u5207\u6362\u4e3a\u5e73\u94fa"
+                },
+                "icon": {}
+            }
+        }
+    },
+    "dataZoom": {
+        "show": true,
+        "type": "slider",
+        "showDetail": true,
+        "showDataShadow": true,
+        "realtime": true,
+        "start": 0,
+        "end": 2500,
+        "orient": "horizontal",
+        "zoomLock": false,
+        "filterMode": "filter"
+    }
+};
+        chart_026c565d46d14b5391f7b8477b3dd442.setOption(option_026c565d46d14b5391f7b8477b3dd442);
+    </script>
+                <div id="f89d885bc1bd4f9383e1c465340c2d08" class="chart-container" style="width:900px; height:500px; "></div>
+    <script>
+            document.getElementById('f89d885bc1bd4f9383e1c465340c2d08').style.width = document.getElementById('f89d885bc1bd4f9383e1c465340c2d08').parentNode.clientWidth + 'px';
+        var chart_f89d885bc1bd4f9383e1c465340c2d08 = echarts.init(
+            document.getElementById('f89d885bc1bd4f9383e1c465340c2d08'), 'white', {renderer: 'canvas'});
+        var option_f89d885bc1bd4f9383e1c465340c2d08 = {
+    "animation": true,
+    "animationThreshold": 2000,
+    "animationDuration": 1000,
+    "animationEasing": "cubicOut",
+    "animationDelay": 0,
+    "animationDurationUpdate": 300,
+    "animationEasingUpdate": "cubicOut",
+    "animationDelayUpdate": 0,
+    "aria": {
+        "enabled": false
+    },
+    "color": [
+        "#5470c6",
+        "#91cc75",
+        "#fac858",
+        "#ee6666",
+        "#73c0de",
+        "#3ba272",
+        "#fc8452",
+        "#9a60b4",
+        "#ea7ccc"
+    ],
+    "series": [
+        {
+            "type": "line",
+            "name": "\u6781\u840c\u7f8e\u5986\u65d7\u8230\u5e97",
+            "connectNulls": false,
+            "xAxisIndex": 0,
+            "symbol": "arrow",
+            "symbolSize": 4,
+            "showSymbol": true,
+            "smooth": false,
+            "clip": true,
+            "step": false,
+            "data": [
+                [
+                    "2023\u5e7405\u670823\u65e5",
+                    42.52
+                ],
+                [
+                    "2023\u5e7405\u670824\u65e5",
+                    43.23
+                ],
+                [
+                    "2023\u5e7405\u670825\u65e5",
+                    79.54
+                ],
+                [
+                    "2023\u5e7405\u670826\u65e5",
+                    73.43
+                ],
+                [
+                    "2023\u5e7405\u670827\u65e5",
+                    51.03
+                ],
+                [
+                    "2023\u5e7405\u670828\u65e5",
+                    91.36
+                ],
+                [
+                    "2023\u5e7405\u670829\u65e5",
+                    85.29
+                ],
+                [
+                    "2023\u5e7405\u670830\u65e5",
+                    98.27
+                ],
+                [
+                    "2023\u5e7405\u670831\u65e5",
+                    128.42
+                ],
+                [
+                    "2023\u5e7406\u670801\u65e5",
+                    106.31
+                ],
+                [
+                    "2023\u5e7406\u670802\u65e5",
+                    60.94
+                ],
+                [
+                    "2023\u5e7406\u670803\u65e5",
+                    99.15
+                ],
+                [
+                    "2023\u5e7406\u670804\u65e5",
+                    71.61
+                ],
+                [
+                    "2023\u5e7406\u670805\u65e5",
+                    95.06
+                ],
+                [
+                    "2023\u5e7406\u670806\u65e5",
+                    76.5
+                ],
+                [
+                    "2023\u5e7406\u670807\u65e5",
+                    93.04
+                ],
+                [
+                    "2023\u5e7406\u670808\u65e5",
+                    90.65
+                ],
+                [
+                    "2023\u5e7406\u670809\u65e5",
+                    107.33
+                ],
+                [
+                    "2023\u5e7406\u670810\u65e5",
+                    115.94
+                ],
+                [
+                    "2023\u5e7406\u670811\u65e5",
+                    133.98
+                ]
+            ],
+            "hoverAnimation": true,
+            "label": {
+                "show": true,
+                "margin": 8
+            },
+            "logBase": 10,
+            "seriesLayoutBy": "column",
+            "lineStyle": {
+                "show": true,
+                "width": 2,
+                "opacity": 1,
+                "curveness": 0,
+                "type": "solid"
+            },
+            "areaStyle": {
+                "opacity": 0
+            },
+            "zlevel": 0,
+            "z": 0
+        },
+        {
+            "type": "line",
+            "name": "\u6781\u840c\u5b98\u65b9\u65d7\u8230\u5e97",
+            "connectNulls": false,
+            "xAxisIndex": 0,
+            "symbol": "arrow",
+            "symbolSize": 4,
+            "showSymbol": true,
+            "smooth": false,
+            "clip": true,
+            "step": false,
+            "data": [
+                [
+                    "2023\u5e7405\u670823\u65e5",
+                    88.92
+                ],
+                [
+                    "2023\u5e7405\u670824\u65e5",
+                    106.74
+                ],
+                [
+                    "2023\u5e7405\u670825\u65e5",
+                    268.43
+                ],
+                [
+                    "2023\u5e7405\u670827\u65e5",
+                    135.84
+                ],
+                [
+                    "2023\u5e7405\u670828\u65e5",
+                    114.67
+                ],
+                [
+                    "2023\u5e7405\u670829\u65e5",
+                    1096.85
+                ],
+                [
+                    "2023\u5e7406\u670801\u65e5",
+                    122.24
+                ],
+                [
+                    "2023\u5e7406\u670802\u65e5",
+                    63.39
+                ],
+                [
+                    "2023\u5e7406\u670803\u65e5",
+                    112.43
+                ],
+                [
+                    "2023\u5e7406\u670804\u65e5",
+                    82.32
+                ],
+                [
+                    "2023\u5e7406\u670805\u65e5",
+                    90.36
+                ],
+                [
+                    "2023\u5e7406\u670806\u65e5",
+                    147.25
+                ],
+                [
+                    "2023\u5e7406\u670807\u65e5",
+                    131.58
+                ],
+                [
+                    "2023\u5e7406\u670808\u65e5",
+                    67.77
+                ],
+                [
+                    "2023\u5e7406\u670809\u65e5",
+                    87.06
+                ],
+                [
+                    "2023\u5e7406\u670810\u65e5",
+                    148.86
+                ],
+                [
+                    "2023\u5e7406\u670811\u65e5",
+                    97.96
+                ]
+            ],
+            "hoverAnimation": true,
+            "label": {
+                "show": true,
+                "margin": 8
+            },
+            "logBase": 10,
+            "seriesLayoutBy": "column",
+            "lineStyle": {
+                "show": true,
+                "width": 2,
+                "opacity": 1,
+                "curveness": 0,
+                "type": "solid"
+            },
+            "areaStyle": {
+                "opacity": 0
+            },
+            "zlevel": 0,
+            "z": 0
+        },
+        {
+            "type": "line",
+            "name": "\u6781\u840c\u7f8e\u5bb9\u4eea\u5b98\u65b9\u65d7\u8230\u5e97\u76f4\u64ad\u95f4",
+            "connectNulls": false,
+            "xAxisIndex": 0,
+            "symbol": "arrow",
+            "symbolSize": 4,
+            "showSymbol": true,
+            "smooth": false,
+            "clip": true,
+            "step": false,
+            "data": [
+                [
+                    "2023\u5e7405\u670823\u65e5",
+                    126.62
+                ],
+                [
+                    "2023\u5e7405\u670824\u65e5",
+                    112.14
+                ],
+                [
+                    "2023\u5e7405\u670825\u65e5",
+                    159.04
+                ],
+                [
+                    "2023\u5e7405\u670826\u65e5",
+                    109.85
+                ],
+                [
+                    "2023\u5e7405\u670827\u65e5",
+                    117.78
+                ],
+                [
+                    "2023\u5e7405\u670828\u65e5",
+                    118.38
+                ],
+                [
+                    "2023\u5e7405\u670829\u65e5",
+                    1301.08
+                ],
+                [
+                    "2023\u5e7406\u670802\u65e5",
+                    103.57
+                ],
+                [
+                    "2023\u5e7406\u670803\u65e5",
+                    142.14
+                ],
+                [
+                    "2023\u5e7406\u670804\u65e5",
+                    97.46
+                ],
+                [
+                    "2023\u5e7406\u670805\u65e5",
+                    135.12
+                ],
+                [
+                    "2023\u5e7406\u670806\u65e5",
+                    120.05
+                ],
+                [
+                    "2023\u5e7406\u670807\u65e5",
+                    126.34
+                ],
+                [
+                    "2023\u5e7406\u670808\u65e5",
+                    83.16
+                ],
+                [
+                    "2023\u5e7406\u670809\u65e5",
+                    51.0
+                ],
+                [
+                    "2023\u5e7406\u670810\u65e5",
+                    105.45
+                ],
+                [
+                    "2023\u5e7406\u670811\u65e5",
+                    82.04
+                ]
+            ],
+            "hoverAnimation": true,
+            "label": {
+                "show": true,
+                "margin": 8
+            },
+            "logBase": 10,
+            "seriesLayoutBy": "column",
+            "lineStyle": {
+                "show": true,
+                "width": 2,
+                "opacity": 1,
+                "curveness": 0,
+                "type": "solid"
+            },
+            "areaStyle": {
+                "opacity": 0
+            },
+            "zlevel": 0,
+            "z": 0
+        },
+        {
+            "type": "line",
+            "name": "\u6781\u840c\u7f8e\u5bb9\u4eea\u5b98\u65b9\u65d7\u8230\u5e97\u81fb\u9009\u53f7",
+            "connectNulls": false,
+            "xAxisIndex": 0,
+            "symbol": "arrow",
+            "symbolSize": 4,
+            "showSymbol": true,
+            "smooth": false,
+            "clip": true,
+            "step": false,
+            "data": [
+                [
+                    "2023\u5e7405\u670829\u65e5",
+                    0.43
+                ]
+            ],
+            "hoverAnimation": true,
+            "label": {
+                "show": true,
+                "margin": 8
+            },
+            "logBase": 10,
+            "seriesLayoutBy": "column",
+            "lineStyle": {
+                "show": true,
+                "width": 2,
+                "opacity": 1,
+                "curveness": 0,
+                "type": "solid"
+            },
+            "areaStyle": {
+                "opacity": 0
+            },
+            "zlevel": 0,
+            "z": 0
+        }
+    ],
+    "legend": [
+        {
+            "data": [
+                "\u6781\u840c\u7f8e\u5986\u65d7\u8230\u5e97",
+                "\u6781\u840c\u5b98\u65b9\u65d7\u8230\u5e97",
+                "\u6781\u840c\u7f8e\u5bb9\u4eea\u5b98\u65b9\u65d7\u8230\u5e97\u76f4\u64ad\u95f4",
+                "\u6781\u840c\u7f8e\u5bb9\u4eea\u5b98\u65b9\u65d7\u8230\u5e97\u81fb\u9009\u53f7"
+            ],
+            "selected": {},
+            "show": true,
+            "padding": 5,
+            "itemGap": 10,
+            "itemWidth": 25,
+            "itemHeight": 14,
+            "backgroundColor": "transparent",
+            "borderColor": "#ccc",
+            "borderWidth": 1,
+            "borderRadius": 0,
+            "pageButtonItemGap": 5,
+            "pageButtonPosition": "end",
+            "pageFormatter": "{current}/{total}",
+            "pageIconColor": "#2f4554",
+            "pageIconInactiveColor": "#aaa",
+            "pageIconSize": 15,
+            "animationDurationUpdate": 800,
+            "selector": false,
+            "selectorPosition": "auto",
+            "selectorItemGap": 7,
+            "selectorButtonGap": 10
+        }
+    ],
+    "tooltip": {
+        "show": true,
+        "trigger": "axis",
+        "triggerOn": "mousemove|click",
+        "axisPointer": {
+            "type": "cross"
+        },
+        "showContent": true,
+        "alwaysShowContent": false,
+        "showDelay": 0,
+        "hideDelay": 100,
+        "enterable": false,
+        "confine": false,
+        "appendToBody": false,
+        "transitionDuration": 0.4,
+        "textStyle": {
+            "fontSize": 14
+        },
+        "borderWidth": 0,
+        "padding": 5,
+        "order": "seriesAsc"
+    },
+    "xAxis": [
+        {
+            "show": true,
+            "scale": false,
+            "nameLocation": "end",
+            "nameGap": 15,
+            "gridIndex": 0,
+            "inverse": false,
+            "offset": 0,
+            "splitNumber": 5,
+            "minInterval": 0,
+            "splitLine": {
+                "show": true,
+                "lineStyle": {
+                    "show": true,
+                    "width": 1,
+                    "opacity": 1,
+                    "curveness": 0,
+                    "type": "solid"
+                }
+            },
+            "data": [
+                "2023\u5e7405\u670823\u65e5",
+                "2023\u5e7405\u670824\u65e5",
+                "2023\u5e7405\u670825\u65e5",
+                "2023\u5e7405\u670826\u65e5",
+                "2023\u5e7405\u670827\u65e5",
+                "2023\u5e7405\u670828\u65e5",
+                "2023\u5e7405\u670829\u65e5",
+                "2023\u5e7405\u670830\u65e5",
+                "2023\u5e7405\u670831\u65e5",
+                "2023\u5e7406\u670801\u65e5",
+                "2023\u5e7406\u670802\u65e5",
+                "2023\u5e7406\u670803\u65e5",
+                "2023\u5e7406\u670804\u65e5",
+                "2023\u5e7406\u670805\u65e5",
+                "2023\u5e7406\u670806\u65e5",
+                "2023\u5e7406\u670807\u65e5",
+                "2023\u5e7406\u670808\u65e5",
+                "2023\u5e7406\u670809\u65e5",
+                "2023\u5e7406\u670810\u65e5",
+                "2023\u5e7406\u670811\u65e5"
+            ]
+        }
+    ],
+    "yAxis": [
+        {
+            "show": true,
+            "scale": false,
+            "nameLocation": "end",
+            "nameGap": 15,
+            "gridIndex": 0,
+            "inverse": false,
+            "offset": 0,
+            "splitNumber": 5,
+            "minInterval": 0,
+            "splitLine": {
+                "show": true,
+                "lineStyle": {
+                    "show": true,
+                    "width": 1,
+                    "opacity": 1,
+                    "curveness": 0,
+                    "type": "solid"
+                }
+            }
+        }
+    ],
+    "title": [
+        {
+            "show": true,
+            "text": "\u6781\u840c\u76f4\u64ad\u95f4",
+            "target": "blank",
+            "subtarget": "blank",
+            "padding": 5,
+            "itemGap": 10,
+            "textAlign": "auto",
+            "textVerticalAlign": "auto",
+            "triggerEvent": false
+        }
+    ],
+    "toolbox": {
+        "show": true,
+        "orient": "horizontal",
+        "itemSize": 15,
+        "itemGap": 10,
+        "left": "80%",
+        "feature": {
+            "saveAsImage": {
+                "type": "png",
+                "backgroundColor": "auto",
+                "connectedBackgroundColor": "#fff",
+                "show": true,
+                "title": "\u4fdd\u5b58\u4e3a\u56fe\u7247",
+                "pixelRatio": 1
+            },
+            "restore": {
+                "show": true,
+                "title": "\u8fd8\u539f"
+            },
+            "dataView": {
+                "show": true,
+                "title": "\u6570\u636e\u89c6\u56fe",
+                "readOnly": false,
+                "lang": [
+                    "\u6570\u636e\u89c6\u56fe",
+                    "\u5173\u95ed",
+                    "\u5237\u65b0"
+                ],
+                "backgroundColor": "#fff",
+                "textareaColor": "#fff",
+                "textareaBorderColor": "#333",
+                "textColor": "#000",
+                "buttonColor": "#c23531",
+                "buttonTextColor": "#fff"
+            },
+            "dataZoom": {
+                "show": true,
+                "title": {
+                    "zoom": "\u533a\u57df\u7f29\u653e",
+                    "back": "\u533a\u57df\u7f29\u653e\u8fd8\u539f"
+                },
+                "icon": {},
+                "filterMode": "filter"
+            },
+            "magicType": {
+                "show": true,
+                "type": [
+                    "line",
+                    "bar",
+                    "stack",
+                    "tiled"
+                ],
+                "title": {
+                    "line": "\u5207\u6362\u4e3a\u6298\u7ebf\u56fe",
+                    "bar": "\u5207\u6362\u4e3a\u67f1\u72b6\u56fe",
+                    "stack": "\u5207\u6362\u4e3a\u5806\u53e0",
+                    "tiled": "\u5207\u6362\u4e3a\u5e73\u94fa"
+                },
+                "icon": {}
+            }
+        }
+    },
+    "dataZoom": {
+        "show": true,
+        "type": "slider",
+        "showDetail": true,
+        "showDataShadow": true,
+        "realtime": true,
+        "start": 0,
+        "end": 2500,
+        "orient": "horizontal",
+        "zoomLock": false,
+        "filterMode": "filter"
+    }
+};
+        chart_f89d885bc1bd4f9383e1c465340c2d08.setOption(option_f89d885bc1bd4f9383e1c465340c2d08);
+    </script>
+    </div>
+
+    <script>
+    </script>
+    <script>
+        (function() {
+            containers = document.getElementsByClassName("chart-container");
+            if(containers.length > 0) {
+                containers[0].style.display = "block";
+            }
+        })()
+
+        function showChart(evt, chartID) {
+            let containers = document.getElementsByClassName("chart-container");
+            for (let i = 0; i < containers.length; i++) {
+                containers[i].style.display = "none";
+            }
+
+            let tablinks = document.getElementsByClassName("tablinks");
+            for (let i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = "tablinks";
+            }
+
+            document.getElementById(chartID).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+    </script>
+</body>
+</html>
